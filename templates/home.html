@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Mobile Price Range Prediction</h1>
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <input type="int" name="battery_power" placeholder="battery_power" required="required" /><br>
+    	  <input type="int" name="bluetooth" placeholder="blue" required="required" /><br>
+        <input type="text" name="clock_speed" placeholder="clock_speed" required="required" /><br>
+        <input type="text" name="dual_sim" placeholder="dual_sim" required="required" /><br>
+        <input type="text" name="Front_Camera_mpxl" placeholder="Front_Camera_mpxl" required="required" /><br>
+        <input type="text" name="four_g" placeholder="four_g" required="required" /><br>
+        <input type="text" name="int_memory" placeholder="int_memory" required="required" /><br>
+        <input type="text" name="Mobile_Depth_in_cm" placeholder="Mobile_Depth_in_cm" required="required" /><br>
+
+        <input type="int" name="Weight_of_mobile_phone" placeholder="Weight_of_mobile_phone" required="required" /><br>
+        <input type="text" name="Number_of_cores_of_processor" placeholder="Number_of_cores_of_processor" required="required" /><br>
+        <input type="text" name="Primary_Camera_mega_pixels" placeholder="Primary_Camera_mega_pixels" required="required" /><br>
+        <input type="text" name="Pixel_Resolution_Height" placeholder="Pixel_Resolution_Height" required="required" /><br>
+        <input type="text" name="Pixel_Resolution_Width" placeholder="Pixel_Resolution_Width" required="required" /><br>
+        <input type="text" name="ram" placeholder="ram" required="required" /><br>
+        <input type="text" name="Screen_Height_of_mobile_in_cm" placeholder="Screen_Height_of_mobile_in_cm" required="required" /><br>
+        <input type="text" name="Screen_Width_of_mobile_in_cm" placeholder="Screen_Width_of_mobile_in_cm" required="required" /><br>
+        <input type="text" name="Maximum_Battery_Life_on_a_Single_Charge" placeholder="Maximum_Battery_Life_on_a_Single_Charge" required="required" /><br>
+        <input type="text" name="three_g" placeholder="three_g" required="required" /><br>
+        <input type="text" name="touch_screen" placeholder="touch_screen" required="required" /><br>
+        <input type="text" name="wifi" placeholder="wifi" required="required" /><br>
+
+        
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+<body>
+
+   <br>
+   <br>
+
+
+ </div>
+ {{result}}
+
+</body>
+</html>
